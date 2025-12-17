@@ -365,7 +365,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			if (!utility.ModData.DefaultTerrainInfo.TryGetValue(tileset, out var terrainInfo))
 				throw new InvalidDataException($"Unknown tileset {tileset}");
 
-			var map = new Map(Game.ModData, terrainInfo, size.Width, size.Height)
+			var map = new Map(Game.ModData, terrainInfo, size)
 			{
 				Title = basic.GetValue("Name", Path.GetFileNameWithoutExtension(filename)),
 				Author = "Westwood Studios",
@@ -544,7 +544,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 							ar.Add(new HealthInit(health));
 					}
 
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					map.ActorDefinitions.Append(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
 
 					continue;
 				}
@@ -582,7 +582,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					new OwnerInit("Neutral")
 				};
 
-				map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+				map.ActorDefinitions.Append(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
 			}
 		}
 
@@ -611,7 +611,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				if (!map.Rules.Actors.ContainsKey(name))
 					Console.WriteLine($"Ignoring unknown actor type: `{name}`");
 				else
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					map.ActorDefinitions.Append(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
 			}
 		}
 
@@ -665,7 +665,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				if (!map.Rules.Actors.ContainsKey(name))
 					Console.WriteLine($"Ignoring unknown actor type: `{name}`");
 				else
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					map.ActorDefinitions.Append(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
 			}
 		}
 

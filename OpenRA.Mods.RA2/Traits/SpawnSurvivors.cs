@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -66,8 +67,7 @@ namespace OpenRA.Mods.RA2.Traits
 					};
 
 					var unit = w.CreateActor(true, actorType.ToLowerInvariant(), td);
-					var mobile = unit.TraitOrDefault<Mobile>();
-					mobile?.Nudge(unit);
+					unit.QueueActivity(false, new Nudge(unit));
 				}
 			});
 		}

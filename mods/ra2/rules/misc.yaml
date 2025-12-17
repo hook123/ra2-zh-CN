@@ -1,12 +1,11 @@
 mpspawn:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (Multiplayer Spawnpoint)
+		Name: actor-mpspawn-name
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
 		QuantizedFacings: 1
-	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
 	MapEditorData:
@@ -17,12 +16,11 @@ mpspawn:
 waypoint:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (Waypoint for scripted behavior)
+		Name: actor-waypoint-name
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
 		QuantizedFacings: 1
-	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
 	MapEditorData:
@@ -99,7 +97,6 @@ TROCK05:
 	Inherits: ^Rock
 
 CAMERA:
-	AlwaysVisible:
 	Interactable:
 	Immobile:
 		OccupiesSpace: false
@@ -112,7 +109,7 @@ CAMERA:
 	RenderSpritesEditorOnly:
 		Image: camera
 	EditorOnlyTooltip:
-		Name: (reveals area to owner)
+		Name: actor-camera-name
 	MapEditorData:
 		Categories: System
 
@@ -144,8 +141,7 @@ FLAMEGUY:
 INGALITE:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (Invisible Light Post)
-	AlwaysVisible:
+		Name: actor-ingalite-name
 	Immobile:
 		OccupiesSpace: false
 	RenderSpritesEditorOnly:
@@ -168,7 +164,7 @@ INGALITE:
 NEGLAMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Negative Light Post)
+		Name: actor-neglamp-name
 	TerrainLightSource:
 		Range: 13c688
 		Intensity: -0.15
@@ -179,7 +175,7 @@ NEGLAMP:
 INYELWLAMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Yellow Light Post)
+		Name: actor-inyelwlamp-name
 	TerrainLightSource:
 		Range: 15c640
 		Intensity: 0.01
@@ -190,7 +186,7 @@ INYELWLAMP:
 INPURPLAMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Purple Light Post)
+		Name: actor-inpurplamp-name
 	TerrainLightSource:
 		Range: 11c736
 		Intensity: 0.01
@@ -201,7 +197,7 @@ INPURPLAMP:
 INORANLAMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Orange Light Post)
+		Name: actor-inoranlamp-name
 	TerrainLightSource:
 		Range: 11c736
 		Intensity: 0.01
@@ -212,7 +208,7 @@ INORANLAMP:
 INGRNLMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Green Light Post)
+		Name: actor-ingrnlmp-name
 	TerrainLightSource:
 		Range: 15c640
 		Intensity: 0.01
@@ -223,7 +219,7 @@ INGRNLMP:
 INREDLMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Red Light Post)
+		Name: actor-inredlmp-name
 	TerrainLightSource:
 		Range: 15c640
 		Intensity: 0.01
@@ -234,7 +230,7 @@ INREDLMP:
 INBLULMP:
 	Inherits: INGALITE
 	EditorOnlyTooltip:
-		Name: (Invisible Blue Light Post)
+		Name: actor-inblulmp-name
 	TerrainLightSource:
 		Range: 15c640
 		Intensity: 0.01

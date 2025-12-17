@@ -34,10 +34,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public override object Create(ActorInitializer init) { return new WithVoxelHelicopterBody(init.Self, this); }
 
-		public IEnumerable<ModelAnimation> RenderPreviewVoxels(
+		public IEnumerable<ModelAnimation> RenderPreviewVoxels(IModelCache cache,
 			ActorPreviewInitializer init, RenderVoxelsInfo rv, string image, Func<WRot> orientation, int facings, PaletteReference p)
 		{
-			var voxel = init.World.ModelCache.GetModelSequence(image, Sequence);
+			var voxel = cache.GetModelSequence(image, Sequence);
 			var body = init.Actor.TraitInfo<BodyOrientationInfo>();
 			var frame = init.GetValue<BodyAnimationFrameInit, uint>(this, 0);
 
@@ -63,7 +63,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var body = self.Trait<BodyOrientation>();
 			rv = self.Trait<RenderVoxels>();
 
-			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
+			var voxel = rv.Renderer.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
 				() => body.QuantizeOrientation(self.Orientation),

@@ -5,6 +5,12 @@
             "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
             "commandLineArgs": "Game.Mod=ra2 Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
         },
+        "Linux": {
+            "commandName": "Executable",
+            "executablePath": "/home/joker/.dotnet/dotnet",
+            "workingDirectory": "../engine/bin",
+            "commandLineArgs": "OpenRA.dll Game.Mod=ra2 Engine.EngineDir=.. Engine.LaunchPath=./ Engine.ModSearchPaths=../../mods,../mods Debug.DisplayDeveloperSettings=true"
+        },
         "Utility": {
             "commandName": "Executable",
             "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
@@ -12,6 +18,16 @@
             "environmentVariables": {
                 "ENGINE_DIR": "..\\..\\engine",
                 "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"
+            }
+        },
+        "Utility.linux.check-yaml": {
+            "commandName": "Executable",
+            "executablePath": "/home/joker/.dotnet/dotnet",
+            "workingDirectory": "../engine/bin",
+            "commandLineArgs": "OpenRA.Utility.dll ra2 --check-yaml",
+            "environmentVariables": {
+                "ENGINE_DIR": "..",
+                "MOD_SEARCH_PATHS": "../../mods,../mods"
             }
         }
     }

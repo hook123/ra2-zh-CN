@@ -53,7 +53,7 @@ MOD_SOLUTION_FILES = $(shell find . -maxdepth 1 -iname '*.sln' 2> /dev/null)
 MSBUILD = msbuild -verbosity:m -nologo
 DOTNET = dotnet
 
-RUNTIME ?= net6
+RUNTIME ?= net8
 CONFIGURATION ?= Release
 DOTNET_RID = $(shell ${DOTNET} --info | grep RID: | cut -w -f3)
 ARCH_X64 = $(shell echo ${DOTNET_RID} | grep x64)
