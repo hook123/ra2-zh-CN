@@ -6,7 +6,8 @@ modcontent-installprompt =
     高级安装包含从原版游戏光盘或数字安装复制音乐、视频和其他内容的选项。
 
 modcontent-header = 
-    游戏内容可从原版游戏光盘或现有数字安装中提取。OpenRA也可以从2008年《红色警戒》免费软件版本的在线镜像下载基础游戏文件。
+    游戏内容可从原版游戏光盘或现有数字安装中提取。
+    OpenRA也可以从2008年《红色警戒》免费软件版本的在线镜像下载基础游戏文件。
 
 modcontent-package-basefiles = 基础游戏文件
 modcontent-package-aftermathfiles = 《Aftermath》扩展文件

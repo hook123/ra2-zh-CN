@@ -12,7 +12,6 @@ FileSystem: DefaultFileSystem
         $ra2-content: ra2content
 
 Rules:
-	content|rules.yaml
 
 Cursors:
 	content|cursors.yaml
@@ -45,27 +44,27 @@ FluentMessages:
 
 Fonts:
     Tiny:
-        Font: common|FreeSans.ttf
+        Font: common|sarasa-fixed-sc-regular.ttf
         Size: 10
         Ascender: 8
     TinyBold:
-        Font: common|FreeSansBold.ttf
+        Font: common|sarasa-fixed-sc-bold.ttf
         Size: 10
         Ascender: 8
     Regular:
-        Font: common|FreeSans.ttf
+        Font: common|sarasa-fixed-sc-regular.ttf
         Size: 14
         Ascender: 11
     Bold:
-        Font: common|FreeSansBold.ttf
+        Font: common|sarasa-fixed-sc-bold.ttf
         Size: 14
         Ascender: 11
     MediumBold:
-        Font: common|FreeSansBold.ttf
+        Font: common|sarasa-fixed-sc-bold.ttf
         Size: 18
         Ascender: 14
     BigBold:
-        Font: common|FreeSansBold.ttf
+        Font: common|sarasa-fixed-sc-bold.ttf
         Size: 24
         Ascender: 18
 
