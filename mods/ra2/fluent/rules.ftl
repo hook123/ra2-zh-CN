@@ -75,7 +75,7 @@ actor-engineer =
     .description =
         可以俘获敌方建筑。
         无武装
-    .name = 工兵
+    .name = 工程师
 
 actor-dog =
     .description =
@@ -90,7 +90,7 @@ actor-e1 =
         通用步兵。
         对步兵强大
         对载具、飞机弱
-    .name = G.I.
+    .name = 美国大兵
 
 actor-snipe =
     .name = 狙击手
@@ -138,7 +138,7 @@ actor-tany =
           对步兵和建筑造成较大伤害
           对装甲单位和飞行单位造成较小伤害
         特殊能力：使用C4摧毁建筑物
-        
+
         最多可以训练1名
     .name = 塔尼亚
 
@@ -196,77 +196,77 @@ actor-carrier =
 
 ## allied-structures.yaml
 actor-gacnst =
-    .description = 建造基地结构。
-    .name = 兵营
+    .description = 盟军基地。
+    .name = 盟军基地
 
 actor-gapowr =
     .description = 为其他结构提供电力。
-    .name = 发电厂
+    .name = 盟军发电厂
 
 actor-gapile =
     .description = 训练步兵。
-    .name = 兵营
+    .name = 盟军兵营
 
 actor-garefn =
-    .description = 将矿石处理成信用点。
-    .name = 矿石提炼厂
+    .description = 将矿石转换为金钱。
+    .name = 盟军矿石精炼厂
 
 actor-gaairc =
     .description =
         提供雷达
         支持4架飞机。
-    .name = 空军指挥部总部
+    .name = 盟军空指部
 
 actor-amradr =
-    .name = 美国空军指挥部总部
+    .name = 美国空指部
     .paratrooperspower-paratroopers-name = 空降部队
     .paratrooperspower-paratroopers-description =
-        一架货运飞机可在地图上的任何位置投放八名GI
+        一架货运飞机可在地图上的任何位置投放八名美国大兵
         （美军地面部队单位）
 
 actor-gaweap =
     .description = 生产车辆
-    .name = 战争工厂
+    .name = 盟军战车工厂
 
 actor-gayard =
-    .name = 造船厂
+    .name = 盟军造船厂
     .description = 生产及修理船只、潜艇、运输舰及其他海军单位
 
 actor-gadept =
     .description = 修理车辆并移除恐布无人机（以价格计算）
-    .name = 维修中心
+    .name = 盟军维修厂
 
 actor-gatech =
-    .description = 部署高阶单位
-    .name = 战斗实验室
+    .description = 部署高科技单位
+    .name = 盟军作战实验室
 actor-gawall =
     .description =
         轻型墙壁
         可以被车辆压毁
-    .name = 盟军墙壁
+    .name = 盟军围墙
 
 actor-gapill =
     .description = 自动化的反步兵防御。
-    .name = 炮兵箱
+    .name = 机枪碉堡
 
 actor-nasam =
     .description = 自动化的防空防御。
-    .name = 爱国者导弹系统
+    .name = 爱国者导弹
 
 actor-gtgcan =
     .description = 全自动远程地面防御。
-    .name = 大炮
+    .name = 巨炮
 
 actor-gaorep =
     .description = 所有类型的收入提高25%。
-    .name = 矿石提纯器
+    .name = 矿石精炼器
 
 actor-gaspysat =
-    .description = 揭示整个战场。
-    .name = 间谍卫星上行链路
+    .description = 整个战场可见。
+    .name = 间谍卫星
 
 actor-gagap =
-    .name = 缺口生成器
+    .name = 裂缝产生器
     .description =
         用迷雾遮蔽敌人的视线。
         需要电源来运行。
@@ -274,13 +274,13 @@ actor-gagap =
 actor-gaweat =
     .description = 用致命天气掌控全局！
     .name = 天气控制器
-    .weathercontrolsupportpower-lightningstorm-name = 天气风暴
+    .weathercontrolsupportpower-lightningstorm-name = 闪电风暴
     .weathercontrolsupportpower-lightningstorm-description = 控制天气以摧毁敌军部队。
 
 actor-gacsph =
     .description = 允许在一个3x3网格内传送单位。
-    .name = 时空转移器
-    .chronoshiftpower-chronoshift-name = 时空转移器
+    .name = 时空传送器
+    .chronoshiftpower-chronoshift-name = 时空传送
     .chronoshiftpower-chronoshift-description = 在地图上瞬移一批单位。
 
 actor-atesla =
@@ -289,7 +289,7 @@ actor-atesla =
         需要电力运作。
         强大针对：步兵、车辆
            弱点针对：飞机
-    .name = 棱镜塔
+    .name = 光镜塔
 
 actor-power-name = 发电厂
 actor-refinery-name = 矿石精炼厂
@@ -299,32 +299,32 @@ actor-repairpad-name = 维修站
 
 ## allied-vehicles.yaml
 actor-amcv =
-    .description = 部署为建设场地。
-    .name = 移动建设车
+    .description = 部署为盟军基地。
+    .name = 盟军机动基地车
 
 actor-cmin =
     .description =
         采集矿石。
            无武装
-        特殊能力：可以瞬移到自己的精炼厂
-    .name = 时空矿工
+        特殊能力：可以瞬移到自己的矿石精炼厂
+    .name = 超时空矿车
 
 actor-mtnk =
-    .name = 灰熊战斗坦克
+    .name = 灰熊坦克
     .description =
         盟军主战坦克。
         强大针对：车辆、舰船
            弱点针对：步兵、飞机
 
 actor-tnkd =
-    .name = 坦克摧毁者
+    .name = 坦克杀手
     .description =
         特种反装甲单位。
         对装甲单位、船只攻击强
         对步兵、飞机攻击弱
 
 actor-fv =
-    .name = 步兵战车
+    .name = 多功能步兵战车
     .description =
         多用途装甲车。
         无乘客时：
@@ -334,10 +334,10 @@ actor-fv =
 
 actor-sref =
     .description =
-        发射致命光束。
+        发射致命激光。
         对步兵、装甲单位攻击强
         对飞机攻击弱
-    .name = 棱镜坦克
+    .name = 光棱坦克
 
 actor-mgtk =
     .description =
@@ -444,7 +444,7 @@ actor-cafarm01-name = 农场
 actor-cafarm02-name = 农场粮仓
 actor-cafarm06-name = 灯塔
 actor-causfgl-name = 美国国旗
-actor-carufgl-name = 俄罗斯国旗
+actor-carufgl-name = 苏俄国旗
 actor-cairfgl-name = 伊拉克国旗
 actor-capofgl-name = 波兰国旗
 actor-caskfgl-name = 韩国国旗
@@ -544,7 +544,7 @@ actor-pres-name = 总统
 meta-civbuilding-name = 平民建筑
 meta-flag-name = 旗帜
 
-meta-civilianinfantry = 
+meta-civilianinfantry =
     .name = 平民
     .generic-name = 平民
 
@@ -559,7 +559,7 @@ meta-streetlight-name = 路灯
 meta-telephonepole-name = 电线杆
 meta-rock-name = 岩石
 
-meta-crate = 
+meta-crate =
     .name = 箱子
     .generic-name = 箱子
 
@@ -582,72 +582,74 @@ actor-e2 =
         廉价步枪步兵。
           对步兵强力
           对载具、空军单位较弱
-    .name = 预备役
+    .name = 动员兵
 
-actor-flakt = 
+actor-flakt =
     .description =
         防空/反步兵单位。
           对空军单位、步兵强力
           对载具单位较弱
-    .name = 防空兵
+    .name = 防空步兵
 
-actor-shk = 
+actor-shk =
     .description =
         特殊装甲单位，使用电能。
           对步兵、轻装甲强力
           对坦克、空军单位较弱
-        特殊能力：特斯拉线圈充能
-    .name = 特斯拉兵
+        特殊能力：磁爆线圈充能
+    .name = 磁爆步兵
 
-actor-terror = 
+actor-terror =
     .description =
         携带C4炸药贴身引爆，对敌人进行神风特攻，迅速而高效地炸毁目标。
           对地面单位强力
           对空军单位较弱
     .name = 恐怖分子
 
-actor-deso = 
+actor-deso =
     .description =
         携带辐射武器。
         可部署进行范围伤害。
           对步兵、轻装甲强力
           对坦克、空军单位较弱
-    .name = Desolator
+    .name = 辐射工兵
 
-actor-ivan = 
-    .description = 炸弹专家。可以在任何东西上，甚至是奶牛，放置炸弹。
-    .name = 疯狂伊万
+actor-ivan =
+    .description = 炸弹专家。
+    可以在任何东西上，甚至是奶牛，放置炸弹。
+    .name = 疯狂伊文
 
-actor-civan = 
-    .description = 炸弹专家。可以在任何东西上，甚至是奶牛，放置炸弹。可以在地图上的任何位置传送。
-    .name = 时空伊万
+actor-civan =
+    .description = 炸弹专家。
+    可以在任何东西上，甚至是奶牛，放置炸弹。
+    可以在地图上的任何位置传送。
+    .name = 超时空伊文
 
-actor-yuri = 
+actor-yuri =
     .description =
-        精神步兵。可以对敌方单位进行精神控制。
+        精神步兵。
+        可以对敌方单位进行精神控制。
         可以部署以释放强大的精神波。
-          对步兵、载具强劲
-          对恐吓无人机、飞机、建筑弱点
-        
+        对步兵、载具强劲
+        对恐吓无人机、飞机、建筑弱点
     .name = 尤里
 
-actor-yuripr = 
-    .description =
-        精神步兵。可以在很远的距离对敌方单位进行精神控制。
-        可以部署以释放强大的精神波。
-          对步兵、载具强劲
-          对恐吓无人机、飞机、建筑弱点
-        
-        最多可以训练1名
-    .name = 尤里Prime
+actor-yuripr =
+    .description = 精神步兵。
+    可以在很远的距离对敌方单位进行精神控制。
+    可以部署以释放强大的精神波。
+    对步兵、载具强劲
+    对恐吓无人机、飞机、建筑弱点
+    最多可以训练1名
+    .name = 尤里改
 
 ## soviet-naval.yaml
-actor-sapc = 
+actor-sapc =
     .description =
         通用海军运输船。
         可以运输步兵和载具。
           无武装
-    .name = 两栖运输船
+    .name = 两栖运输艇
 
 actor-sub =
     .description =
@@ -656,168 +658,168 @@ actor-sub =
           对舰船强劲
           对地面单位、飞机弱点
         特殊能力：潜航
-    .name = 暴风突击潜艇
+    .name = 攻击潜艇
 
-actor-hyd = 
+actor-hyd =
     .description =
         反舰/反步兵海军单位.
         强力对 航空母舰, 步兵
         弱对 坦克, 海上单位
     .name = 海蝎
 
-actor-sqd = 
+actor-sqd =
     .description =
         海洋生物
         在近战中攻击敌人.
         强力对 船只
-    .name = 巨型章鱼
+    .name = 巨型乌贼
 
 ## soviet-structures.yaml
-actor-nacnst = 
-    .description = 允许建造基地结构。
-    .name = 造兵厂
+actor-nacnst =
+    .description = 苏联基地。
+    .name = 苏联基地
 
-actor-napowr = 
+actor-napowr =
     .description = 为其他结构提供电力。
-    .name = 特斯拉反应堆
+    .name = 苏联磁能反应堆
 
-actor-nahand = 
+actor-nahand =
     .description = 生产步兵。
-    .name = 兵营
+    .name = 苏联兵营
 
-actor-narefn = 
-    .description = 将矿石加工成积分。
-    .name = 矿物提炼厂
+actor-narefn =
+    .description = 将矿石转换为金钱。
+    .name = 苏联矿石精炼厂
 
-actor-naradr = 
+actor-naradr =
     .description = 提供雷达。
-    .name = 雷达塔
+    .name = 苏联雷达
 
-actor-naweap = 
+actor-naweap =
     .description = 生产坦克和车辆。
-    .name = 武器工厂
+    .name = 苏联战车工厂
 
-actor-nayard = 
-    .name = 海军基地
+actor-nayard =
+    .name = 苏联造船厂
     .description = 生产并修理船只、潜艇、运输艇和其他海军单位。
 
-actor-nadept = 
-    .description = 修理载具并移除恐吓无人机（需付费）。
-    .name = 基地维修厂
+actor-nadept =
+    .description = 修理载具并移除恐吓无人机（消耗金钱）。
+    .name = 苏联维修工厂
 
-actor-nanrct = 
+actor-nanrct =
     .description = 为其他建筑提供电力。
     .name = 核反应堆
 
-actor-natech = 
+actor-natech =
     .description = 允许部署先进技术单位。
-    .name = 战斗实验室
+    .name = 作战实验室
 
-actor-naclon = 
+actor-naclon =
     .description = 克隆大多数训练有素的步兵。
-    .name = 克隆罐
+    .name = 复制中心
 
-actor-napsis = 
+actor-napsis =
     .description = 侦测敌方单位和打击目标
-    .name = 精神感应传感器
+    .name = 心灵探测器
 
-actor-nairon = 
+actor-nairon =
     .description = 为装甲单位提供无敌属性，对肉质单位造成伤害。
     .name = 铁幕装置
     .grantexternalconditionpower-ironcurtain-name = 铁幕设备提供外部条件能力 - 铁幕
     .grantexternalconditionpower-ironcurtain-description = 使一组单位无敌20秒。
 
-actor-namisl = 
+actor-namisl =
     .description =
         提供原子弹。
         需要电力才能运行。
           特殊能力：原子弹
         最多可建造1座。
-    .name = 核导弹发射井
-    .nukepower-name = 核导弹
+    .name = 核弹发射井
+    .nukepower-name = 核弹
     .nukepower-description = 向目标位置发射毁灭性的原子弹。
 
-actor-nawall = 
+actor-nawall =
     .description =
         轻型墙壁。
         可以被载具碾压。
     .name = 苏联墙
 
-actor-naflak = 
+actor-naflak =
     .description = 自动防空防御。
-    .name = 高射炮
+    .name = 防空炮
 
-actor-tesla = 
+actor-tesla =
     .description =
         高级基地防御。
         需要电力才能运行。
           对步兵、载具攻击性强
           对飞行单位攻击性弱
-    .name = 特斯拉线圈
+    .name = 磁爆线圈
 
-actor-nalasr = 
+actor-nalasr =
     .description = 自动反步兵防御。
-    .name = 防卫枪
+    .name = 哨戒炮
 
 ## soviet-vehicles.yaml
-actor-smcv = 
-    .description = 部署成建造场。
-    .name = 移动建造车辆
+actor-smcv =
+    .description = 部署成苏联基地。
+    .name = 苏联机动基地车
 
-actor-harv = 
+actor-harv =
     .description =
         采集矿石。
           对步兵攻击性强
           对载具、飞行单位攻击性弱
-    .name = 战争矿工
+    .name = 武装采矿车
 
-actor-dron = 
-    .name = 恐怖无人机
+actor-dron =
+    .name = 恐怖机器人
     .description =
-        对空强，地面部队弱
+        对地面战车强
         对部队弱，对飞机强
 
-actor-htk = 
-    .name = 高射炮坦克
+actor-htk =
+    .name = 防空履带车
     .description =
         地面部队运输和防空/反步兵战车。
         对飞机强，对地面部队强
         对战车弱
 
-actor-htnk = 
-    .name = 犀牛重型坦克
+actor-htnk =
+    .name = 犀牛坦克
     .description =
-        苏联动战主力坦克。
+        苏联主力坦克。
         对战车强
         对地面部队、飞机弱
 
-actor-apoc = 
-    .name = 末日坦克
+actor-apoc =
+    .name = 天启坦克
     .description =
-        苏联动战改良坦克，双炮管和防空导弹发射器。
+        苏联改良坦克，双炮管和防空导弹发射器。
         对战车、飞机强
         对地面部队弱
 
-actor-ttnk = 
-    .name = 特斯拉坦克
+actor-ttnk =
+    .name = 磁能坦克
     .description =
-        俄罗斯特种坦克，装备双小型特斯拉线圈。
+        苏俄特种坦克，装备双小型磁能线圈。
         对战车、地面部队强
         对飞机弱
 
-actor-dtruck = 
-    .description = 破障车，主动配备核弹炸药。
-    .name = 破障车
+actor-dtruck =
+    .description = 自爆车，主动配备核弹炸药。
+    .name = 自爆卡车
 
 ## tech-structures.yaml
-actor-caoild-name = 技术油井
+actor-caoild-name = 油井
 
 actor-caairp =
-    .name = 技术机场
+    .name = 机场
     .paratrooperspower-allies-name = 盟军空降部队
-    .paratrooperspower-allies-description = 一架运输机在地图上的任何位置空投六名GI，提取后他们将步行前往出发点。
+    .paratrooperspower-allies-description = 一架运输机在地图上的任何位置空投六名盟军步兵，提取后他们将步行前往出发点。
     .paratrooperspower-soviets-name = 苏联空降兵
-    .paratrooperspower-soviets-description = 一架运输机在地图上的任何位置空投九名征兵，提取后他们将步行前往出发点。
+    .paratrooperspower-soviets-description = 一架运输机在地图上的任何位置空投九名苏联步兵，提取后他们将步行前往出发点。
 
 actor-cahosp-name = 平民医院
 actor-cathosp-name = 科技医院
@@ -844,7 +846,7 @@ meta-baseworld =
     .faction-2-name = 德国
     .faction-2-description =
         Germany
-        特殊装甲车：坦克歼击车
+        特殊装甲车：坦克杀手
     .faction-3-name = 英格兰
     .faction-3-description =
         英格兰
@@ -856,7 +858,7 @@ meta-baseworld =
     .faction-5-name = 韩国
     .faction-5-description =
         韩国
-        特殊飞机：黑鹰
+        特殊飞机：黑鹰战机
     .faction-6-name = 古巴
     .faction-6-description =
         古巴
@@ -864,12 +866,12 @@ meta-baseworld =
     .faction-7-name = 利比亚
     .faction-7-description =
         利比亚
-        特殊装甲车：破障车
+        特殊装甲车：自爆卡车
     .faction-8-name = 伊拉克
     .faction-8-description =
         伊拉克
         特殊步兵：毁灭者
-    .faction-9-name = 俄罗斯
+    .faction-9-name = 苏俄
     .faction-9-description =
-        俄罗斯
-        特殊装甲车：特斯拉坦克
+        苏俄
+        特殊装甲车：磁能坦克
